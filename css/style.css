@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body {
+  background: #D3D3D3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-employee {
+	background: white;
+	margin: 100px;
+	padding: 25px;
+}
