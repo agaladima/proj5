@@ -1,7 +1,9 @@
-$.ajax({
-  url: 'https://randomuser.me/api/',
-  dataType: 'json',
-  success: function(data) {
-    console.log(data);
-  }
+$(document).ready(function() {
+	$.ajax({
+	  url: 'https://randomuser.me/api/?results=12',
+	  dataType: 'json',
+	  success: function(data) {
+	    console.log(data);
+	  }
+	});
 });
