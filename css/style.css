@@ -4,14 +4,18 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.main-employee {
+#main-employee {
 	background: white;
 	margin: 100px;
-	padding: 25px;
-	/*display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;*/
+	padding: 25px;	
 }
 li {
-	
+	display: inline-block;
+	float: left;
+	/*border-style: solid;
+	border-color: black;
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;*/
 }

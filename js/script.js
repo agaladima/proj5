@@ -11,13 +11,13 @@ $(document).ready(function() {
 	function displayEmployees(data) {
 		var employeeHTML = '<ul>';
 	    $.each(data.results, function(i, info) {
-	    	employeeHTML += '<div class="col">';
-	    	employeeHTML += '<img src="' + info.picture.large + '" class="image">';
-	    	employeeHTML += '<p class="name">' + info.name.first + info.name.last + '</p>';
+	    	employeeHTML += '<li>';
+	    	employeeHTML += '<img src="' + info.picture.medium + '" class="image">';
+	    	employeeHTML += '<p class="name">' + info.name.first + ' ' +info.name.last + '</p>';
 	    	employeeHTML += '<p class="email">' + info.email + '</p>';
-	    	employeeHTML += '<p class="city">' + info.location.city + '</p></div>';
+	    	employeeHTML += '<p class="city">' + info.location.city + '</p></li>';
 	    });
-	    employeeHTML += '</ul>'
+	    employeeHTML += '</ul>';
 	    $('#employee-info').html(employeeHTML);
 	}
 	$.getJSON(url, displayEmployees);
