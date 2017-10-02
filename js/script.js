@@ -11,11 +11,11 @@ $(document).ready(function() {
 	function displayEmployees(data) {
 		var employeeHTML = '<ul>';
 	    $.each(data.results, function(i, info) {
-	    	employeeHTML += '<li>';
+	    	employeeHTML += '<li><div class="contents">';
 	    	employeeHTML += '<img src="' + info.picture.medium + '" class="image">';
-	    	employeeHTML += '<p class="name">' + info.name.first + ' ' +info.name.last + '</p>';
+	    	employeeHTML += '<div class="inner-content"><p class="name"><strong>' + info.name.first + ' ' +info.name.last + '</strong></p>';
 	    	employeeHTML += '<p class="email">' + info.email + '</p>';
-	    	employeeHTML += '<p class="city">' + info.location.city + '</p></li>';
+	    	employeeHTML += '<p class="city">' + info.location.city + '</p></div></div></li>';
 	    });
 	    employeeHTML += '</ul>';
 	    $('#employee-info').html(employeeHTML);

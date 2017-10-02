@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #D3D3D3;
   font-family: "Montserrat", sans-serif;
@@ -6,16 +11,54 @@ body {
 
 #main-employee {
 	background: white;
-	margin: 100px;
-	padding: 25px;	
+	margin: 20px 100px;
+	width: 80%;
 }
+
+.the-title {
+	padding: 50px 20px 0 15px;
+}
+
+#employee-info {
+	padding: 0 20px;
+}
+
+ul {
+    width: 100%;
+    margin: auto;
+}
+
 li {
 	display: inline-block;
-	float: left;
-	/*border-style: solid;
-	border-color: black;
+	border-style: solid;
+	border-color: #D3D3D3;
 	list-style-type: none;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;*/
+	border-width: .5px;
+	margin: 10px;
+	width: 31%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.contents {
+	margin: 10px;
+	float: left;
+}
+
+.inner-content {
+	display: inline-block;
+	padding: 10px;
+	float: right;
+	margin: auto;
+}
+
+.image {
+	border-radius: 50%;
+
+}
+
+.email, .city {
+	color: #D3D3D3;
+	font-size: 11px;
+	margin: 1px;
 }
