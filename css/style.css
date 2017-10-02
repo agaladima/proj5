@@ -11,8 +11,10 @@ body {
 
 #main-employee {
 	background: white;
-	margin: 20px 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	width: 80%;
+	padding-bottom: 3em;
 }
 
 .the-title {
@@ -20,12 +22,15 @@ body {
 }
 
 #employee-info {
-	padding: 0 20px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
 }
 
 ul {
     width: 100%;
-    margin: auto;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 li {
@@ -34,20 +39,24 @@ li {
 	border-color: #D3D3D3;
 	list-style-type: none;
 	border-width: .5px;
-	margin: 10px;
-	width: 31%;
-	height: auto;
+	margin: 1em;
+	width: 30.8%;
+	height: 8em;
 	border-radius: 5px;
 }
 
+li:hover {
+	cursor: pointer;
+}
+
 .contents {
-	margin: 10px;
+	margin: 1em;
 	float: left;
 }
 
 .inner-content {
 	display: inline-block;
-	padding: 10px;
+	padding: 1em;
 	float: right;
 	margin: auto;
 }
@@ -57,8 +66,52 @@ li {
 
 }
 
+.name {
+	margin-bottom: .2em;
+}
+
+
 .email, .city {
 	color: #D3D3D3;
-	font-size: 11px;
+	font-size: .9em;
 	margin: 1px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
