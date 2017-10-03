@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #D3D3D3;
+  background: #C1BDBC;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -36,7 +36,7 @@ ul {
 li {
 	display: inline-block;
 	border-style: solid;
-	border-color: #D3D3D3;
+	border-color: #C1BDBC;
 	list-style-type: none;
 	border-width: .5px;
 	margin: 1em;
@@ -63,7 +63,6 @@ li:hover {
 
 .image {
 	border-radius: 50%;
-
 }
 
 .name {
@@ -72,7 +71,7 @@ li:hover {
 
 
 .email, .city {
-	color: #D3D3D3;
+	color: #C1BDBC;
 	font-size: .9em;
 	margin: 1px;
 }
@@ -114,4 +113,30 @@ li:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.modal-content {
+	width: 20%;
+}
+
+.modHTML {
+	text-align: center;
+/*	margin: auto;
+	width: 33.33%;
+	padding: 10px;*/
+}
+
+.largeImg {
+	border-radius: 50%;
+}
+
+.modName {
+	margin-top: 10px;
+}
+
+.modEmail, .modCity, .modPhone, .modfullAdd, .modBday {
+	color: #C1BDBC;
+	font-size: .9em;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
